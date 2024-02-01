@@ -1,0 +1,140 @@
+#title {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+}
+
+#ranting {
+  text-decoration: wavy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+}
+
+
+/* Style for the Counter Page */
+
+body {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+}
+
+#countLabel {
+  font-family: Verdana;
+  font-size:8em;
+}
+
+.btnContainer {
+  text-align: center;
+}
+
+.buttons {
+  padding: 0.4em 1em;
+  font-family: Verdana;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+  transition-duration: 190ms;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  transform: translateY(-8px);
+  background-color: rgb(70, 128, 234);
+}
+
+#credit {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4em;
+}
+
+#welcomeText {
+  font-size: 3.5em;
+  font-family: Verdana;
+}
+
+/* On off switch */
+
+#toggle {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+#toggle::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(180deg, #777, #3a3a3a);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.3s;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + #toggle{
+  background: #242424
+}
+
+input:checked + #toggle::after {
+  left: 490px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+#toggle:active::after {
+  width: 258px;
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+
+input:checked + #toggle + #background {
+  background: #242424;
+}
+
+#messageSwitch {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+}
+
+#yTho {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5em;
+}
+
+#links {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* Style for the Joystick Page */
+
